@@ -1,0 +1,29 @@
+.nav-links li a {
+  position: relative;
+  text-transform: uppercase; /* all caps */
+  font-weight: 700;           /* thick & sharp */
+  letter-spacing: 1px;
+  padding: 0 4px;
+  transition: color 0.3s;
+}
+
+.nav-links li a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #FF7F50; 
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links li a:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+.nav-links li a:hover {
+  color: #FF7F50;
+}

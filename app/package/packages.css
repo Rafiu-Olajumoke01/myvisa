@@ -1,0 +1,7 @@
+/* Responsive adjustments only */
+@media (max-width: 768px) {
+  .packages-page h1 {
+    font-size: 2rem;
+  }
+}
+
